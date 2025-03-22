@@ -59,7 +59,7 @@ export default function Home() {
           <div className="flex flex-col items-start gap-4 md:flex-row md:items-center">
             <div className="space-y-4 md:w-1/2">
               <h1 className="text-3xl font-extrabold tracking-tight sm:text-4xl md:text-5xl lg:text-6xl">
-                Hi, I'm <span className="text-primary">Tamana Rani</span>
+                Hi, I'm <span className="text-primary">Tamana Pandey</span>
               </h1>
               <p className="max-w-[700px] text-gray-400 md:text-xl">
                 Full Stack Developer specializing in building exceptional digital experiences.
