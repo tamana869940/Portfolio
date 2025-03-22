@@ -3,8 +3,6 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import {
   Github,
-  Mail,
-  FileText,
   Linkedin,
   Twitter,
   ArrowRight,
@@ -13,6 +11,8 @@ import {
   Briefcase,
   User,
   MessageSquare,
+  FileText,
+  Mail,
 } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
@@ -59,38 +59,37 @@ export default function Home() {
           <div className="flex flex-col items-start gap-4 md:flex-row md:items-center">
             <div className="space-y-4 md:w-1/2">
               <h1 className="text-3xl font-extrabold tracking-tight sm:text-4xl md:text-5xl lg:text-6xl">
-                Hi, I'm <span className="text-primary">Your Name</span>
+                Hi, I'm <span className="text-primary">Tamana Rani</span>
               </h1>
               <p className="max-w-[700px] text-gray-400 md:text-xl">
                 Full Stack Developer specializing in building exceptional digital experiences.
               </p>
               <div className="flex gap-4">
-                <Button>
-                  View Projects <ArrowRight className="ml-2 h-4 w-4" />
-                </Button>
-                <Button variant="outline">
-                  Download CV <FileText className="ml-2 h-4 w-4" />
-                </Button>
+                <Link href="#projects">
+                  <Button>
+                    View Projects <ArrowRight className="ml-2 h-4 w-4" />
+                  </Button>
+                </Link>
+                <a href="/Tamana CV.PDF" download="My_Resume.pdf">
+                  <Button variant="outline">
+                    Download CV <ArrowRight className="ml-2 h-4 w-4" />
+                  </Button>
+                </a>
+
               </div>
               <div className="flex gap-4 pt-4">
-                <Link href="#" className="rounded-full bg-gray-800 p-2 hover:bg-gray-700">
+                <Link href="https://github.com/tamana869940" className="rounded-full bg-gray-800 p-2 hover:bg-gray-700">
                   <Github className="h-5 w-5" />
                 </Link>
-                <Link href="#" className="rounded-full bg-gray-800 p-2 hover:bg-gray-700">
+                <Link href="https://www.linkedin.com/in/tamana-rani-596a6b300/" className="rounded-full bg-gray-800 p-2 hover:bg-gray-700">
                   <Linkedin className="h-5 w-5" />
-                </Link>
-                <Link href="#" className="rounded-full bg-gray-800 p-2 hover:bg-gray-700">
-                  <Twitter className="h-5 w-5" />
-                </Link>
-                <Link href="#" className="rounded-full bg-gray-800 p-2 hover:bg-gray-700">
-                  <Mail className="h-5 w-5" />
                 </Link>
               </div>
             </div>
             <div className="md:w-1/2 flex justify-center">
               <div className="relative w-64 h-64 md:w-80 md:h-80 overflow-hidden rounded-full border-4 border-primary">
                 <Image
-                  src="/placeholder.svg?height=320&width=320"
+                  src="/tamana .jpg?height=320&width=320"
                   alt="Profile"
                   width={320}
                   height={320}
@@ -116,7 +115,7 @@ export default function Home() {
                   solve real-world problems.
                 </p>
                 <p className="text-gray-300 mb-4">
-                  My journey in web development started 5 years ago, and since then, I've worked on various projects
+                  My journey in web development started 1 years ago, and since then, I've worked on various projects
                   ranging from small business websites to complex enterprise applications.
                 </p>
                 <p className="text-gray-300">
@@ -124,28 +123,8 @@ export default function Home() {
                   or sharing my knowledge through technical blogs.
                 </p>
               </div>
-              <div className="md:w-1/2">
-                <div className="grid grid-cols-2 gap-4">
-                  <div className="bg-gray-800 p-4 rounded-lg">
-                    <h3 className="font-bold text-xl mb-2">5+</h3>
-                    <p className="text-gray-400">Years Experience</p>
                   </div>
-                  <div className="bg-gray-800 p-4 rounded-lg">
-                    <h3 className="font-bold text-xl mb-2">50+</h3>
-                    <p className="text-gray-400">Projects Completed</p>
                   </div>
-                  <div className="bg-gray-800 p-4 rounded-lg">
-                    <h3 className="font-bold text-xl mb-2">20+</h3>
-                    <p className="text-gray-400">Happy Clients</p>
-                  </div>
-                  <div className="bg-gray-800 p-4 rounded-lg">
-                    <h3 className="font-bold text-xl mb-2">10+</h3>
-                    <p className="text-gray-400">Awards Won</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
         </section>
 
         {/* Skills Section */}
@@ -255,26 +234,21 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
               <div>
                 <p className="text-gray-300 mb-6">
-                  I'm interested in freelance opportunities – especially ambitious or large projects. However, if you
-                  have other requests or questions, don't hesitate to contact me.
+                I am a passionate Full-Stack Web Developer with expertise in building advanced and feature-rich web applications. With a strong command over the MERN stack (MongoDB, Express.js, React.js, Node.js), I specialize in creating highly interactive and visually stunning user interfaces. My focus is on developing scalable, real-time, and futuristic applications with seamless user experiences. I thrive on tackling complex challenges and pushing the boundaries of web development with cutting-edge UI/UX, animations, and high-performance solutions. 🚀
                 </p>
 
                 <div className="space-y-4">
                   <div className="flex items-center">
                     <Mail className="h-5 w-5 mr-3 text-primary" />
-                    <span>youremail@example.com</span>
+                    <span>tamana869940@gmail.com</span>
                   </div>
                   <div className="flex items-center">
                     <Linkedin className="h-5 w-5 mr-3 text-primary" />
-                    <span>linkedin.com/in/yourname</span>
+                    <span>linkedin.com/in/tamana-rani-596a6b300</span>
                   </div>
                   <div className="flex items-center">
                     <Github className="h-5 w-5 mr-3 text-primary" />
-                    <span>github.com/yourusername</span>
-                  </div>
-                  <div className="flex items-center">
-                    <Twitter className="h-5 w-5 mr-3 text-primary" />
-                    <span>twitter.com/yourusername</span>
+                    <span>github.com/tamana869940</span>
                   </div>
                 </div>
               </div>
@@ -338,19 +312,16 @@ export default function Home() {
       <footer className="border-t border-gray-800 bg-black py-8">
         <div className="container flex flex-col items-center justify-between gap-4 md:flex-row">
           <p className="text-center text-sm text-gray-400 md:text-left">
-            © {new Date().getFullYear()} Your Name. All rights reserved.
+            © {new Date().getFullYear()} Tamana Rani. All rights reserved.
           </p>
           <div className="flex gap-4">
-            <Link href="#" className="text-gray-400 hover:text-primary">
+            <Link href="github.com/tamana869940" className="text-gray-400 hover:text-primary">
               <Github className="h-5 w-5" />
             </Link>
-            <Link href="#" className="text-gray-400 hover:text-primary">
+            <Link href="linkedin.com/in/tamana-rani-596a6b300" className="text-gray-400 hover:text-primary">
               <Linkedin className="h-5 w-5" />
             </Link>
-            <Link href="#" className="text-gray-400 hover:text-primary">
-              <Twitter className="h-5 w-5" />
-            </Link>
-            <Link href="#" className="text-gray-400 hover:text-primary">
+            <Link href="tamana869940@gmail.com" className="text-gray-400 hover:text-primary">
               <Mail className="h-5 w-5" />
             </Link>
           </div>
